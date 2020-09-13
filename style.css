@@ -1,0 +1,76 @@
+body {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: 'Abril Fatface', cursive;
+}
+svg {
+  border: 2px solid black;
+ 
+  background-color: #fff;
+}
+h1 {
+  margin-top: -40px;
+}
+
+rect{ 
+  fill : #008B8B;
+}
+rect:hover {
+  opacity: 0.2;
+}
+.container {
+  position: relative;
+}
+.tooltip {
+  background-color: #eaeaea;
+  display: none;
+  font-size: 14px;
+  
+  position: absolute;
+  padding: 10px;
+  z-index: 100;
+  text-align: center;
+}
+.tooltip.show {
+  display: block;
+}
+.tooltip p{
+  margin: 5px;
+}
+.tooltip small {
+  display: inline-block;
+  margin-top: 5px;
+}
+.legend{
+  font-size: 12px;
+  position: absolute;
+  padding: 20px;
+  top: 30px;
+  right: 30px; 
+  text-align: right;
+  border-style: groove;
+}
+.legend .text{
+  position: relative;
+  padding-right: 30px;
+  margin: 5px;
+  min-width: 200px;
+}
+.legend .box{
+  position: absolute;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  top: 0;
+  right: 0;
+}
+.legend .box.orange{
+  background-color: orange;
+} 
+.legend .box.blue{
+  background-color: skyblue;
+}
